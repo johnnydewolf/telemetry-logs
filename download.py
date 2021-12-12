@@ -25,7 +25,6 @@ print("[*] Trying to fetch logs")
 
 base_url = "https://143.198.225.222"
 session = requests.Session()
-#session.headers.headers = {"Authorization": "Basic amRld29sZjpqMGhubnlAcDIxZSE="}
 session.auth = requests.HTTPBasicAuth(os.getenv("AD_USERNAME"), os.getenv("AD_PASSWORD"))
 
 try:
