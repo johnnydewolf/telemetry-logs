@@ -23,7 +23,7 @@ import requests
 
 print("[*] Trying to fetch logs")
 
-base_url = "https://143.198.225.222"
+base_url = "https://telemetry-logs.aws-int.tesla.com"
 session = requests.Session()
 session.auth = requests.HTTPBasicAuth(os.getenv("AD_USERNAME"), os.getenv("AD_PASSWORD"))
 
